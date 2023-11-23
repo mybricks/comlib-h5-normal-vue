@@ -1,0 +1,44 @@
+{
+  "title": "弹出层",
+  "namespace": "mybricks.normal-vue.popup",
+  "author": "mybricks-team",
+  "author_name": "板砖团队",
+  "version": "1.0.0",
+  "runtime": "./runtime.vue",
+  "data": "./data.json",
+  "editors": "./editors.tsx",
+  "icon": "./icon.svg",
+  "inputs": [],
+  "outputs": [
+    {
+      "id": "ok",
+      "title": "确定",
+      "desc": "确认后将会关闭弹出层"
+    },
+    {
+      "id": "cancel",
+      "title": "取消"
+    },
+    {
+      "id": "apply",
+      "title": "应用",
+      "schema": {
+        "type": "follow"
+      }
+    },
+    {
+      "id": "onClose",
+      "title": "关闭"
+    },
+    {
+      "id": "onClickOverlay",
+      "title": "点击遮罩时"
+    }
+  ],
+  "slots": [
+    {
+      "id": "content",
+      "title": "内容"
+    }
+  ]
+}

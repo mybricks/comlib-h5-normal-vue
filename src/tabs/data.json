@@ -1,0 +1,19 @@
+{
+  "mode": "topbar",
+  "tabs": [
+    {
+      "_id": "tabName1",
+      "tabName": "标签项1"
+    },
+    {
+      "_id": "tabName2",
+      "tabName": "标签项2"
+    }
+  ],
+  "edit": {
+    "currentItemId": ""
+  },
+  "tabsXLayout": "center",
+  "initChangeTab": false,
+  "hideContent": false
+}

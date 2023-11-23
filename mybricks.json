@@ -1,0 +1,44 @@
+{
+  "domain": "https://my.mybricks.world",
+  "email": "stuzhaoxing@gmail.com",
+  "namespace": "mybricks.normal-h5-comlib.vue",
+  "pxToVw": {},
+  "componentType": "KH5",
+  "comAry": [
+    "./src/_connector/com.json",
+    "./src/_muilt-inputJs/com.json",
+    "./src/_pick/com.json",
+    "./src/_merge/com.json",
+    "./src/_timer-delay/com.json",
+    {
+      "title": "基础",
+      "comAry": [
+        "./src/text/com.json",
+        "./src/richText/com.json",
+        "./src/image/com.json",
+        "./src/button/com.json"
+      ]
+    },
+    {
+      "title": "容器",
+      "comAry": [
+        "./src/containerGrid2/com.json",
+        "./src/tabs/com.json"
+      ]
+    },
+    {
+      "title": "其他",
+      "comAry": [
+        "./src/safeArea/com.json"
+      ]
+    },
+    {
+      "visible": false,
+      "comAry": [
+        "./src/popup/com.json"
+      ]
+    }
+  ],
+  "userName": "stuzhaoxing@gmail.com",
+  "tags": "vue"
+}
