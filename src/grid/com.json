@@ -1,7 +1,7 @@
 {
     "title": "栅格布局",
     "visibility": true,
-    "namespace": "mybricks.normal-vue.grid",
+    "namespace": "mybricks.normal-h5-vue.grid",
     "author": "mybricks",
     "author_name": "mybricks",
     "version": "1.0.0",

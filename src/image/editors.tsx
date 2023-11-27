@@ -48,7 +48,6 @@ export default {
                   }
                 },
                 set({}, value) {
-                  console.log(data.mode);
                   data.mode = value;
                 }
               }

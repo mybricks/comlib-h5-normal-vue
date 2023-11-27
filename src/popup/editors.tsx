@@ -129,6 +129,15 @@ export default {
       },
     ],
   },
+  ".mybricks-close": {
+    style: [
+      {
+        title: "关闭按钮",
+        options: ["background"],
+        target: ".mybricks-close",
+      },
+    ],
+  }
   // ".mybricks-content": {
   //   style: [
   //     {

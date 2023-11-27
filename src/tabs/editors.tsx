@@ -172,18 +172,18 @@ export default {
         {
           title: '其它',
           items: [
-            {
-              title: "支持滑动",
-              type: "switch",
-              value: {
-                get({ data }) {
-                  return data.swipeable;
-                },
-                set({ data }, value) {
-                  data.swipeable = value;
-                },
-              },
-            },
+            // {
+            //   title: "支持滑动",
+            //   type: "switch",
+            //   value: {
+            //     get({ data }) {
+            //       return data.swipeable;
+            //     },
+            //     set({ data }, value) {
+            //       data.swipeable = value;
+            //     },
+            //   },
+            // },
             {
               title: "隐藏内容",
               type: "switch",

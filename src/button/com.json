@@ -1,6 +1,6 @@
 {
   "title": "按钮",
-  "namespace": "mybricks.normal-vue.button",
+  "namespace": "mybricks.normal-h5-vue.button",
   "author": "mybricks-team",
   "author_name": "板砖团队",
   "icon": "./icon.svg",

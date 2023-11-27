@@ -24,7 +24,8 @@
       "comAry": [
         "./src/grid/com.json",
         "./src/div/com.json",
-        "./src/tabs/com.json"
+        "./src/tabs/com.json",
+        "./src/swiper/com.json"
       ]
     },
     {
