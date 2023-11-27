@@ -1,17 +1,20 @@
 .tabs {
   margin-bottom: 5px;
   width: 100%;
-  overflow: hidden;
+  //   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
 
+  overflow-x: auto;
+  overflow-y: hidden;
+
   height: 44px;
 
   // LINE
-  .tab_line {
+  .tab_list {
     height: 100%;
-    width: 100%;
+    // width: 100%;
     display: flex;
     margin-bottom: 0px;
     overflow-x: auto;
@@ -19,45 +22,37 @@
     align-items: center;
 
     &::-webkit-scrollbar {
-      display: none;
-    }
-
-    .tabItem_line {
-      height: 100%;
-      position: relative;
-      color: #313131;
-      font-size: 16px;
-      font-weight: 500;
-      padding: 0 19px;
-      display: flex;
-      align-items: center;
-
-      flex-shrink: 0;
-
-      &:first-of-type {
-        padding-left: 18px;
+        display: none;
       }
-
-      &:last-of-type {
-        padding-right: 18px;
-      }
-
-      &.active {
-        opacity: 1;
-        font-size: 17px;
-        font-weight: 600;
-
-        .line {
-          position: absolute;
-          bottom: 5px;
-          left: 50%;
-          transform: translateX(-50%);
-          background-color: #fa6400;
-          width: 20px;
-          height: 2px;
-          border-radius: 1px;
+    
+      .tabItem {
+        height: 100%;
+        position: relative;
+        color: #313131;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 0 19px;
+        display: flex;
+        align-items: center;
+    
+        flex-shrink: 0;
+    
+        &.active {
+          opacity: 1;
+          font-size: 17px;
+          font-weight: 600;
+    
+          .line {
+            position: absolute;
+            bottom: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #fa6400;
+            width: 20px;
+            height: 2px;
+            border-radius: 1px;
+          }
         }
       }
-    }
   }
 }

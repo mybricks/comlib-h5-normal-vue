@@ -1,13 +1,13 @@
 <template>
   <div>
     <div :class="`tabs ${className}`" :style="justifyContent ? { justifyContent } : {}">
-      <div class="tab_line">
+      <div class="tab_list">
         <div
           v-for="item in items"
           :key="item._id"
           @click="tabClick(item._id)"
           :class="[
-            'tabItem_line',
+            'tabItem',
             'taroify-tabs__tab',
             isActive(item._id) ? 'active taroify-tabs__tab--active' : '',
           ]"
