@@ -22,14 +22,16 @@
     {
       "title": "容器",
       "comAry": [
-        "./src/containerGrid2/com.json",
+        "./src/grid/com.json",
+        "./src/div/com.json",
         "./src/tabs/com.json"
       ]
     },
     {
       "title": "其他",
       "comAry": [
-        "./src/safeArea/com.json"
+        "./src/safeArea/com.json",
+        "./src/returnTop/com.json"
       ]
     },
     {

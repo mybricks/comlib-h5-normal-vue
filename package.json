@@ -1,7 +1,7 @@
 {
   "name": "@mybricks/comlib-h5-normal-vue",
   "version": "0.0.13",
-  "description": "H5通用组件库-Vue版",
+  "description": "H5通用组件库",
   "main": "./dist/index.js",
   "private": true,
   "scripts": {

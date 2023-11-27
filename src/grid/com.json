@@ -1,0 +1,36 @@
+{
+    "title": "栅格布局",
+    "visibility": true,
+    "namespace": "mybricks.normal-vue.grid",
+    "author": "mybricks",
+    "author_name": "mybricks",
+    "version": "1.0.0",
+    "description": "布局",
+    "icon": "./icon.svg",
+    "runtime": "./runtime.vue",
+    "runtime.edit": "./editor/runtime.edit.tsx",
+    "data": "./data.json",
+    "editors": "./editor/edit.ts",
+    "inputs": [
+    ],
+    "slots": [
+      {
+        "id": "col0",
+        "title": "拖拽组件到这里"
+      },
+      {
+        "id": "col1",
+        "title": "拖拽组件到这里"
+      }
+    ],
+    "outputs": [
+      {
+        "id": "col0",
+        "title": "列点击"
+      },
+      {
+        "id": "col1",
+        "title": "列点击"
+      }
+    ]
+  }

@@ -1,0 +1,85 @@
+@color-primary: #FA6400;
+
+@color-primary-alpha: rgba(250, 100, 0, 0.2);
+
+.draggingTip() {
+  position: absolute;
+  z-index: 1000;
+  color: @color-primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-style: oblique;
+  mix-blend-mode: difference;
+  &.dashed {
+    &&::after {
+      border-style: dashed;
+    }
+    &&::before {
+      border-style: dashed;
+    }
+  }
+}
+
+.draggingTipW {
+  .draggingTip();
+  height: 18px;
+  width: 100%;
+  inset: 0;
+  top: 50%;
+  border-bottom-width: 1px;
+  margin-top: -9px;
+  &&::after {
+    content: "";
+    flex: 1;
+    border: 0px solid @color-primary;
+    border-bottom-width: 1px;
+  }
+  &&::before {
+    content: "";
+    flex: 1;
+    border: 0px solid @color-primary;
+    border-bottom-width: 1px;
+  }
+}
+
+.draggingTipH {
+  .draggingTip();
+  flex-direction: column;
+  inset: 0;
+  height: 100%;
+  left: 50%;
+  margin-left: -50%;
+  border-left-width: 1px;
+  &&::after {
+    content: '';
+    flex: 1;
+    border: 0px solid @color-primary;
+    border-left-width: 1px;
+  }
+  &&::before {
+    content: '';
+    flex: 1;
+    border: 0px solid @color-primary;
+    border-left-width: 1px;
+  }
+}
+
+.dragging {
+  background-color: @color-primary-alpha !important;
+  mix-blend-mode: difference;
+}
+
+.hover {
+  background-color: rgba(250, 100, 0, .8);
+}
+
+.table {
+  width: 100%;
+}
+
+.dashed {
+  outline: 1px dashed rgba(0, 0, 0, 0.1);
+  outline-offset: -1px;
+}
