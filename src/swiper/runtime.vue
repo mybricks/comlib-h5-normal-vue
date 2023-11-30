@@ -55,8 +55,6 @@ export default {
     },
   },
   mounted() {
-
-    console.log('12321', this.m.env, !!this.m.env.edit)
     const { currentIndex } = this;
     const { duration } = this.m?.data;
     this.swiperRef = new Swiper(this.$refs.swiper, {

@@ -1,5 +1,5 @@
 <template>
-  <div :class="cls" :style="$attrs.style ?? {}">
+  <div :class="cls" :style="$attrs.style ?? {}" @click="(e) => this.$emit('click', e)">
     <img :class="imgCls" :src="src" />
   </div>
 </template>

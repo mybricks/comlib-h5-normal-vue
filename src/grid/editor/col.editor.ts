@@ -26,9 +26,9 @@ export default {
             { value: WidthUnitEnum.Percent, label: "百分比" },
             { value: WidthUnitEnum.Px, label: "固定宽度" },
           ],
-          ifVisible(props: EditorResult<Data>) {
-            return !isLastCol(props);
-          },
+          // ifVisible(props: EditorResult<Data>) {
+          //   return !isLastCol(props);
+          // },
           value: {
             get(props: EditorResult<Data>) {
               return col.widthMode ?? WidthUnitEnum.Auto;
@@ -45,8 +45,11 @@ export default {
             type: "Number",
           },
           ifVisible(props: EditorResult<Data>) {
-            return col?.widthMode === WidthUnitEnum.Px && !isLastCol(props);
+            return col?.widthMode === WidthUnitEnum.Px;
           },
+          // ifVisible(props: EditorResult<Data>) {
+          //   return col?.widthMode === WidthUnitEnum.Px && !isLastCol(props);
+          // },
           value: {
             get({ data, focusArea }: EditorResult<Data>) {
               return col?.width;
@@ -65,8 +68,11 @@ export default {
             max: 100,
           },
           ifVisible(props: EditorResult<Data>) {
-            return col?.widthMode === WidthUnitEnum.Percent && !isLastCol(props);
+            return col?.widthMode === WidthUnitEnum.Percent;
           },
+          // ifVisible(props: EditorResult<Data>) {
+          //   return col?.widthMode === WidthUnitEnum.Percent && !isLastCol(props);
+          // },
           value: {
             get({ data, focusArea }: EditorResult<Data>) {
               return col?.width;
@@ -203,7 +209,7 @@ export default {
       target(props: EditorResult<Data>) {
         const { row, col } = getCol(props);
         const key = `${row.key},${col.key}`;
-        return `> .mybricks-layout > .mybricks-row > div[data-layout-col-key="${key}"]`;
+        return ` .mybricks-layout .mybricks-row .mybricks-col[data-layout-col-key="${key}"]`;
       },
     }),
   },

@@ -69,12 +69,12 @@ export default {
     },
     style: [
       createStyleForGrid({
-        target: ({ id }: EditorResult<Data>) => `> .mybricks-layout`,
+        target: ({ id }: EditorResult<Data>) => ` .mybricks-layout`,
       }),
-      createStyleForCol({
-        target: ({ id }: EditorResult<Data>) =>
-          `> .mybricks-layout > .mybricks-row > .mybricks-col`,
-      }),
+      // createStyleForCol({
+      //   target: ({ id }: EditorResult<Data>) =>
+      //     `.mybricks-layout .mybricks-row .mybricks-col`,
+      // }),
     ],
   },
   ...RowEditor,

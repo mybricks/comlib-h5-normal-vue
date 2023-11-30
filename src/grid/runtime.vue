@@ -7,6 +7,7 @@
             class="col mybricks-col"
             :style="colStyle(col, row, colIndex)"
             :key="col.key"
+            :data-layout-col-key="`${row.key},${col.key}`"
           >
             <slot
               :name="col.key"
@@ -89,9 +90,9 @@ export default {
   align-items: stretch;
   flex-shrink: 0;
   flex-grow: 0;
-  &:last-child {
-    flex: 1;
-  }
+  // &:last-child {
+  //   flex: 1;
+  // }
 }
 
 .col {

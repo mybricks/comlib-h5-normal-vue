@@ -1,6 +1,6 @@
 {
   "title": "富文本",
-  "namespace": "mybricks.vue.richText",
+  "namespace": "mybricks.normal-h5-vue.richText",
   "author": "mybricks-team",
   "author_name": "板砖团队",
   "version": "1.0.0",
