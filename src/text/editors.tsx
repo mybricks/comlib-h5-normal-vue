@@ -42,6 +42,13 @@ export default {
         },
       },
     ],
+    spm: [
+      {
+        id: 'text',
+        title: '文本',
+        type: 'CLK' // 可选参数，支持的事件种类，CLK代表点击，EXP代表曝光，同时dom上会自动监听这些事件并曝光
+      }
+    ],
     items: ({ data, output, style }, cate0, cate1, cate2) => {
       cate0.title = "常规";
       cate0.items = [

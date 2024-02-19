@@ -16,6 +16,13 @@ export default {
         target: ".button",
       },
     ],
+    spm: [
+      {
+        id: 'btn_operate',
+        title: '按钮',
+        type: ['CLK', 'EXP'] // 可选参数，支持的事件种类，CLK代表点击，EXP代表曝光，同时dom上会自动监听这些事件并曝光
+      }
+    ],
     items: [
       {
         // 使用 ifVisible 来控制是否显示该配置项
@@ -33,31 +40,31 @@ export default {
           },
         },
       },
-      {
-        title: "作为热区",
-        description: "如果开启，当宽度或者高度为自适应时，将会被重置为 50px",
-        type: "switch",
-        value: {
-          get({ data }) {
-            return data.asHotarea;
-          },
-          set({ data, style }, value: boolean) {
-            //作为热区时，宽高不支持自适应
-            if (value) {
-              if (style.height === "auto" || style.height === "100%") {
-                style.flex = "unset";
-                style.height = 50;
-              }
+      // {
+      //   title: "作为热区",
+      //   description: "如果开启，当宽度或者高度为自适应时，将会被重置为 50px",
+      //   type: "switch",
+      //   value: {
+      //     get({ data }) {
+      //       return data.asHotarea;
+      //     },
+      //     set({ data, style }, value: boolean) {
+      //       //作为热区时，宽高不支持自适应
+      //       if (value) {
+      //         if (style.height === "auto" || style.height === "100%") {
+      //           style.flex = "unset";
+      //           style.height = 50;
+      //         }
 
-              if (style.width === "auto" || style.width === "100%") {
-                style.width = 50;
-              }
-            }
+      //         if (style.width === "auto" || style.width === "100%") {
+      //           style.width = 50;
+      //         }
+      //       }
 
-            data.asHotarea = value;
-          },
-        },
-      },
+      //       data.asHotarea = value;
+      //     },
+      //   },
+      // },
       {}, //空对象可以用来分割配置项
       {
         title: "单击",

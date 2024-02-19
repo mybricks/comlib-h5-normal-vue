@@ -1,12 +1,12 @@
 <template>
-    <div :class="textCx" :style="style" @click="onClick">
+    <div :class="textCx" :style="style" :data-spm="m.env.spm?.auto?.('text')" @click="onClick">
         <span>{{ data.text }}</span>
     </div>
 </template>
 
 <script>
 export default {
-    props: ["env", "data", "inputs", "outputs"],
+    props: ["env", "data", "inputs", "outputs", "m"],
     computed: {
         textCx() {
             return {
@@ -40,14 +40,12 @@ export default {
             if (!this.env.runtime) {
                 return;
             }
-            console.warn("onClick");
             this.outputs["onClick"](this.data.text);
         },
         onLongPress() {
             if (!this.env.runtime) {
                 return;
             }
-            console.warn("onLongPress");
             this.outputs["onLongPress"](this.data.text);
         }
     },
